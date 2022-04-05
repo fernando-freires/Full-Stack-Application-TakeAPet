@@ -1,2 +1,6 @@
 # Full Stack Application: TakeAPet
-Aplicação feita para praticar desenvolvimento web Full stack, sendo ela feita em NodeJS, ReactJS e como database o NoSQL MongoDB e a ODM Mongoose.
+### Aplicação para praticar desenvolvimento web Full stack, sendo ela feita em NodeJS, ReactJS e como database o NoSQL MongoDB e a ODM Mongoose.
+
+#### O projeto consiste em um sistema de adoção de Pets, onde existe uma página de home onde qualquer um pode ver os pets disponíveis para adoção (Não necessita estar autenticado), na barra de navegação há links referentes a página de cadastro e também de login caso o usuário já tenha feito seu cadastro anteriormente, após o login a barra de navegação ganha novos links, como por exemplo o link: "Meus pets" onde é coletado o token gerado pelo jsonwebtoken e certifica que o usuário está cadastrado, podendo ele alem de ver os seus pets, ter a possibilidade de agendar uma visita para adotar o pet de algum outro usuário. O método para passar feedbacks para o usuário sobre se as suas ações durante a sessão estão sendo válidas é através de um hook criado por mim, chamado useFlashMessage, onde recebe o dado da mensagem de acordo com as requisições(ações) e também o tipo de mensagem que será mostrada ('success' ou 'error').
+
+##### Outro elemento utilizado nesse projeto que foi de grande aprendizado foi o bcrypt, sendo o pilar para autenticação da senha do usuário antes de enviá-la ao banco de dados e também o cors, para que não houvesse possíveis problemas durante a execução do back-end e front-end no servidor local.
